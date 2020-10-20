@@ -1,0 +1,90 @@
+@import "normalize";
+@import "base";
+@import "fonts";
+
+$mainwhite : #E5E5E5;
+$darkwhite : #F9F7F7;
+$orangemenu: #D1A954;
+
+
+.header {
+    padding-top: 60px;
+ 
+    &-grid {
+       display: grid;
+       grid-template-columns: 1fr 3fr 1fr;
+
+        &-logo{
+            justify-self: center;   
+        }
+
+        &-links {
+             display: flex;
+             justify-self: center;
+             align-self: center;
+
+             .link-title {
+                 border: 1px solid rgba(209, 169, 84, 0.9);
+                 margin-right: 16px;
+                @include Montserrat;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 13px;
+                line-height: 16px;
+                text-align: center;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                height: 20px;
+                a {
+                    color: $orangemenu;
+                    text-decoration: none;
+                    margin: 5px;
+                }
+             }
+
+             .link-subtitle {
+                margin-right: 16px;
+                @include Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 13px;
+                line-height: 16px;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                color: $orangemenu;
+                justify-self: center;
+
+                a {
+                    color: $orangemenu;
+                    text-decoration: none;
+                }
+            }
+
+
+            .links {
+                margin-right: 16px; 
+                @include Montserrat;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 13px;
+                line-height: 16px;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                
+                color: #000000;
+
+                a {
+                    text-decoration: none;
+                }
+            }
+
+        }
+
+        &-menu {
+            margin-top: 30px;
+            justify-self: center;
+        }
+    }
+}
+
+@import "media"
