@@ -401,12 +401,16 @@ body {
       align-items: center;
       height: 70vh;
       position: relative; }
-      .header-pictures .slider-container-track-items::before {
+      .header-pictures .slider-container-track-items::after {
         content: "";
         background-color: #D1A954;
         position: absolute;
-        z-index: 1; }
+        height: 185px;
+        bottom: 0;
+        width: 100%;
+        opacity: .92; }
       .header-pictures .slider-container-track-items-item {
+        z-index: 1;
         background-color: #D1A954;
         opacity: .9;
         border: 1px solid white;
@@ -749,7 +753,40 @@ body {
         color: #000000;
         text-decoration: none; }
   .form-inputs {
-    border: none; }
+    border: white;
+    padding-top: 40px; }
+    .form-inputs-name input {
+      width: 100%;
+      padding-bottom: 5px;
+      padding-top: 5px; }
+    .form-inputs-mail {
+      margin-top: 30px; }
+      .form-inputs-mail input {
+        width: 100%;
+        padding-bottom: 5px;
+        padding-top: 5px; }
+    .form-inputs-message {
+      margin-top: 30px;
+      margin-bottom: 30px; }
+      .form-inputs-message input {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 170px;
+        padding-left: 10px; }
+    .form-inputs-button button {
+      border: none;
+      background-color: #D1A954;
+      padding: 10px 30px; }
+      .form-inputs-button button span {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 135%;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #FFFFFF; }
 
 .inst {
   background-color: #F9F7F7;
@@ -786,7 +823,8 @@ body {
   height: 304px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  background-color: #F9F7F7; }
+  background-color: #F9F7F7;
+  margin-top: 0; }
   .images-photo {
     background-position: center;
     background-repeat: no-repeat;

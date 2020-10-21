@@ -122,14 +122,18 @@ $orangemenu: #D1A954;
                     height: 70vh;
                     position: relative;
 
-                    &::before {
+                    &::after{
                         content: "";
                         background-color: $orangemenu;
                         position: absolute;
-                        z-index: 1;
+                        height: 185px;
+                        bottom: 0;
+                        width: 100%;
+                        opacity: .92;
                     }
 
                     &-item {
+                        z-index: 1;
                         background-color: #D1A954; 
                         opacity: .9;
                         border: 1px solid white;
@@ -554,10 +558,6 @@ $orangemenu: #D1A954;
                     display: flex;
                     padding-bottom: 20px;
 
-                    img {
-                          
-                    }
-
                     a {
                         margin-left: 20px;
                         @include parag;
@@ -585,10 +585,6 @@ $orangemenu: #D1A954;
                     display: flex;
                     padding-bottom: 20px;
 
-                    img {
- 
-                    }
-
                     a {
                         margin-left: 20px;
                         @include parag;
@@ -599,7 +595,59 @@ $orangemenu: #D1A954;
     }
 
     &-inputs {
-        border: none;
+        border: white;
+        padding-top: 40px;
+
+        &-name {
+             
+             input {
+                width: 100%;
+                padding-bottom: 5px;
+                padding-top: 5px;
+             }
+        }
+
+        &-mail {
+            margin-top: 30px;
+            input {
+                width: 100%;
+                padding-bottom: 5px;
+                padding-top: 5px;
+             }
+        }
+
+        &-message {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            
+            input {
+                width: 100%;
+                padding-top: 10px;
+                padding-bottom: 170px;
+                padding-left: 10px;
+             } 
+        }
+
+        &-button {
+            
+            button {
+                border: none;
+                background-color: $orangemenu;
+                padding: 10px 30px;
+
+                span {
+                    @include Montserrat;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 135%;                    
+                    text-align: center;
+                    letter-spacing: 0.05em;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                }
+            }
+        }
     }
 }
 
@@ -649,6 +697,7 @@ $orangemenu: #D1A954;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     background-color: #F9F7F7;
+    margin-top: 0;
 
     &-photo {
         background-position: center;
